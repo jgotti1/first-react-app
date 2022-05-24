@@ -1,25 +1,15 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "./App.css";
+import Tweet from "./tweet";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app">
+      <Tweet name="John Gotti" message="I am the dad" />
+      <Tweet name="Marcie Gotti" message="I am the mom" />
+      <Tweet name="Luna Gotti" message="I am the puppy" />
+      <Tweet name="Gracie Gotti" message="I am the killer" />
     </div>
   );
 }
-
 export default App;
